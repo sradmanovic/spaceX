@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +6,155 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("./space-water-1192081.jpg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.frame{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-left: 0;
+  text-shadow: 1px 1px black;
+ 
+  
+}
+.singleLaunch{
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5%;
+  flex: 0 0 25%;
+  margin-top: 5%;
+  padding: 5% 1%;
+  color: rgb(255, 249, 249);
+  height: 500px;
+  background-color: rgba(255, 253, 253, .2);
+  overflow: hidden;
+  white-space: nowrap;
+  box-shadow: 2px 2px rgb(71, 71, 71);
+  
+
+}
+
+.body h1{
+  text-shadow: 2px 2px black;
+  
+}
+
+.btn{
+  height: 10%;
+}
+.pic{
+  height: 60%;
+}
+.pic img{
+  max-height: 300px;
+}
+
+.body{
+  height: 30%;
+  width: 100%;
+}
+.body p{
+  text-overflow:ellipsis;
+   overflow:hidden;
+   padding: 5%;
+   
+}
+
+/* .container{
+  width: 70%;
+  margin: auto;
+  background-color: rgb(255, 255, 255, 0.2);
+  padding: 5%;
+  margin-top: 5%;
+  border-radius: 3%;
+  
+} */
+.btnContainer{
+  display: inline-block;
+  width: 100%;
+}
+.backBtn{
+  background-color: transparent;
+  color: whitesmoke;
+  float: left;
+  width: 75px;
+  height: 30px;
+  margin-bottom: 5%;
+  border: none;
+  font-size: 1.2em;
+}
+
+.backBtn:hover{
+  color: rgb(240, 235, 235) ;
+  transition: 0.2s;
+  transform: scale(1.2);
+  transition-timing-function: ease-in-out;
+}
+
+.backBtn:active{
+  color: black;
+}
+
+.details{
+  width: 100%;
+  margin: auto;
+  color: whitesmoke;
+  text-shadow: 1px 1px black;
+}
+
+.search-params input{
+  width: 50%;
+  margin: auto;
+  background-color: rgb(221, 218, 218, 0.2);
+  margin-top: 5%;
+  border-radius: 50px 50px;
+  height: 30px;
+  padding: 1%;
+  font-size: 1.2em;
+}
+
+.loading{
+  font-size: 1.4em;
+  margin-top: 5%;
+  color: whitesmoke;
+  text-shadow: 1px 1px black;
+}
+
+.details-link{
+  text-decoration: none;
+  color: rgb(31, 30, 30);
+  
+  
+}
+/* <Container>
+<Grid container spacing={3}>
+  <Grid item xs={12} sm={6} md={3}>
+    <Paper>1</Paper>
+  </Grid>
+  <Grid item xs={12} sm={6} md={3}>
+    <Paper>2</Paper>
+  </Grid>
+  <Grid item xs={12} sm={6} md={3}>
+    <Paper>3</Paper>
+  </Grid>
+  <Grid item xs={12} sm={6} md={3}>
+    <Paper>4</Paper>
+  </Grid>
+</Grid>
+
+<Grid container spacing={3}>
+  {notes.map(note => (
+    <Grid item xs={12} md={6} lg={4} key={note.id}>
+      <Paper>{note.title}</Paper>
+    </Grid>
+  ))}
+</Grid>
+</Container> */
